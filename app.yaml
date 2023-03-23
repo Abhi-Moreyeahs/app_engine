@@ -3,5 +3,5 @@ runtime: python38
 handlers:
 - url: /.*
   script: auto
-network:
+vpc_access_connector:
   name: test-connector
