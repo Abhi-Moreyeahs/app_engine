@@ -16,6 +16,10 @@ def root():
 
     return render_template('index.html', times=dummy_times)
 
+@app.route('/tasks/summary')
+def ten_min_summary():
+    # Perform summary after every 10 minutes task here
+    return f"Summary task completed on {datetime.datetime.now()}"
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
