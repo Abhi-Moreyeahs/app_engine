@@ -1,4 +1,4 @@
 cron:
-- description: "Hourly summary job"
+- description: "Summary job per 10 min"
   url: /tasks/summary
-  schedule: every hours
+  schedule: every 10 minutes
